@@ -1,3 +1,93 @@
 * {
     box-sizing: border-box;
 }
+
+:root {
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+    --Darkcyan: hsl(158, 36%, 37%);
+}
+
+.my-body {
+    margin: unset;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+}
+
+@media screen {
+    .my-card {
+        min-width: 375px;
+        max-width: 1440px;
+    }
+}
+
+.my-card {
+    display: flex;
+    width: 700px;
+    height: 500px;
+    margin-top: 120px;
+}
+
+.my-image {
+    width: 49.999%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.some-para {
+    width: 49.999%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--White);
+    padding: 30px;
+}
+
+.heading-3 {
+    opacity: 60%;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+@font-face {
+    font-family: 'my-font';
+    src: url('Montserrat/Montserrat-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'font';
+    src: url('PT_Serif/PTSerif-Bold.ttf') format('ttf');
+}
+
+.bold-para {
+    font-family: 'my-font';
+    font-size: 44px;
+    margin: 10px 0 20px 0 !important;
+}
+
+.opacity-para {
+    opacity: 60%;
+    font-size: 20px;
+}
+
+.brise {
+    color: var(--Darkcyan);
+    font-size: 35px;
+}
+
+.del-brise {
+    opacity: 50%;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.my-button {
+    border-radius: 10px;
+    color: var(--White);
+    padding: 12px 24px;
+    background-color: var(--Darkcyan);
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+}
